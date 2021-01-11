@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int vzemiBitna(int num, int index);
+int main(){
+    printf("%d\n", vzemiBitna(3,2));
+    return 0;
+}
+
+int vzemiBitna(int num, int index){
+    int a = 1;
+    num = num>>index;
+    num = num&a;
+    return num;
+}
