@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int vdigniBitNa(int num, int index);
+int main(){
+    printf("%d\n", vdigniBitNa(9,4));
+    return 0;
+}
+
+int vdigniBitNa(int num, int index){
+    num |= 1u << index;
+    return num;
+}
