@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int changeBit(int num, int index);
+int main(){
+    printf("%d\n", changeBit(9,1));
+    return 0;
+}
+
+int changeBit(int num, int index){
+    num ^= 1u << index;
+    return num;
+}
