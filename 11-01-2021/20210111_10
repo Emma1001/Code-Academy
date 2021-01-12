@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int removeBitsAfterIndex(int num, int index);
+int main(){
+    printf("%d\n", removeBitsAfterIndex(70,2));
+    return 0;
+}
+
+int removeBitsAfterIndex(int num, int index){
+    num &= 255>>(8-index);
+    return num;
+}
