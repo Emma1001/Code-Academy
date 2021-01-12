@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int evenBitsToZero(int num);
+int main(){
+    printf("%d\n", evenBitsToZero(70));
+    return 0;
+}
+
+int evenBitsToZero(int num){
+    num &= 170;
+    return num;
+}
