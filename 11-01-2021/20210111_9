@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int bitsToZeroBetween3and7(int num);
+int main(){
+    printf("%d\n", bitsToZeroBetween3and7(70));
+    return 0;
+}
+
+int bitsToZeroBetween3and7(int num){
+    num &= 143;
+    return num;
+}
