@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int changeBitsTo1AtPositionsDivisibleBy3(int num);
+int main(){
+    printf("%d\n", changeBitsTo1AtPositionsDivisibleBy3(70));
+    return 0;
+}
+
+int changeBitsTo1AtPositionsDivisibleBy3(int num){
+    num |=72;
+    return num;
+}
