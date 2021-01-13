@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+    
+    char countKaravani = 3;
+    char countKempera = 3;
+    double karavani = 90.00;
+    double kempera = 100.00;
+
+    printf("Dobre doshli v Karavani Kempeti pod naem\n");
+    printf("Ako zelaete karavana natisnete 1\n");
+    printf("Ako zelaete kemper natisnete 2\n");
+
+    int rez;
+    scanf("%d", &rez);
+
+    return 0;
+}
