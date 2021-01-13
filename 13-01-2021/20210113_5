@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+    char value='a';
+    printf("\n%d\n",sizeof(value));
+    
+    int iValue=1;
+    printf("\n%d\n",sizeof(iValue));
+    
+    short int siValue=1;
+    printf("\n%d\n",sizeof(siValue));
+    
+    unsigned long int uliValue=1;
+    printf("\n%d\n",sizeof(uliValue));
+    
+    float fValue=1.2;
+    printf("\n%d\n",sizeof(fValue));
+    
+    long long int lValue=11111111;
+    printf("\n%d\n",sizeof(lValue));
+
+    return 0;
+}
