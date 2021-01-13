@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main(){
+
+    char a;
+	scanf("%c", &a);
+	printf("char: %c -> memory: %d\n", a, sizeof(a));
+	
+	int b;
+	scanf("%d", &b);
+	printf("int: %d -> memory: %d\n", b, sizeof(b));
+	
+	long c;
+	scanf("%ld", &c);
+	printf("long: %ld -> memory: %d\n", c, sizeof(c));
+	
+	float d;
+	scanf("%f", &d);
+	printf("float: %f -> memory: %d\n", d, sizeof(d));
+	
+	double e;
+	scanf("%lf", &e);
+	printf("double: %lf -> memory: %d\n", e, sizeof(e));
+
+    return 0;
+}
