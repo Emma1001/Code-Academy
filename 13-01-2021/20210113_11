@@ -1,0 +1,42 @@
+#include <stdio.h>
+int main(){
+    
+    double tomatoKgPrice = 4.5, flourKgPrice = 1.8;
+    double milkPrice = 0.5, iceCreamPrice = 0.6, lollypopPrice = 0.15;
+    double candyKgPrice = 1.5;
+
+    float tomatoWeight, flourWeight, candyWeight;
+    int milkCount, iceCreamCount, lollypopCount;
+    printf("Welcome to our store!\n");
+
+    printf("Tomato? ");
+    scanf("%f",&tomatoWeight);
+    float tomatoTotal = tomatoWeight*tomatoKgPrice;
+
+    printf("Flour? ");
+    scanf("%f",&flourWeight);
+    float flourTotal = flourWeight*flourKgPrice;
+
+    printf("Milk? ");
+    scanf("%d",&milkCount);
+    float milkTotal = milkCount*milkPrice;
+
+    printf("Ice Cream? ");
+    scanf("%d",&iceCreamCount);
+    float iceCreamTotal = iceCreamCount*iceCreamPrice;
+
+    printf("Candy? ");
+    scanf("%f",&candyWeight);
+    float candyTotal = candyWeight*candyKgPrice;
+
+    printf("Lollypop? ");
+    scanf("%d",&lollypopCount);
+    float lollypopTotal = lollypopCount*lollypopPrice;
+
+    printf("Tomato: %.2f, Flour: %.2f, Candy: %.2f\n", tomatoTotal, flourTotal, candyTotal);
+    printf("Milk: %.2f, Ice Cream: %.2f, Lollypop: %.2f\n", milkTotal, iceCreamTotal, lollypopTotal);
+    float sum = tomatoTotal+flourTotal+candyTotal+milkTotal+iceCreamTotal+lollypopTotal;
+    printf("Total money: %.2f", sum);
+
+    return 0;
+}
