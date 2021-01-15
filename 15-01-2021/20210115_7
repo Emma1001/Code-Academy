@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(){
+    double f = 0xBB;
+    printf("f = %lf\n", f);
+    signed long long int i = 0xBB;
+    printf("i = %lld\n", i);
+    unsigned long long int a = 0xBBu;
+    printf("a = %lld\n", a);
+    return 0;
+}
