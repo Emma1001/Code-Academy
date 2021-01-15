@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    char str[] = "Hello";
+    char rts[6];
+
+    int index = 0;
+    for (int i = 4; i >= 0; i--)
+    {
+        rts[index] = str[i];
+        index++; 
+    }
+    
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%c", rts[i]);
+    }
+    
+
+    return 0;
+}
