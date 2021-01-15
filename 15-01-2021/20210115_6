@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(){
+    float f = 0xAA;
+    printf("f = %f\n", f);
+    signed int i = 0xAA;
+    printf("i = %d\n", i);
+    unsigned a = 0xAAu;
+    printf("a = %d\n", a);
+    return 0;
+}
