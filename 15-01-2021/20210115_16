@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+const double pi = 3.14159;
+double area(double r);
+
+int main() {
+    printf("%f\n", area(1));
+    printf("%f\n", area(1.5));
+    printf("%f\n", area(13));
+}
+
+double area(double r){
+    return pi*r*r;
+}
