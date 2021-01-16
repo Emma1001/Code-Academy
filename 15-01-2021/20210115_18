@@ -9,6 +9,7 @@ int main(){
 
     char n = 1;
     double totalMoney = 0.0;
+    int countDays;
     printf("Dobre doshli v Karavani Kempeti pod naem\n");
     
     while(n==1){
@@ -23,14 +24,18 @@ int main(){
             printf("Nqmame nalichni karavani.\n");
         }
         else{
-            totalMoney += karavani;
+            printf("Za kolko dni? ");
+            scanf("%d", &countDays);
+            totalMoney += karavani*countDays;
             countKaravani--;
         }
     }else if(rez == 2){
         if(countKempera == 0){
             printf("Nqmame nalichni kempera.\n");
         }else{
-            totalMoney += kempera;
+            printf("Za kolko dni? ");
+            scanf("%d", &countDays);
+            totalMoney += kempera*countDays;
             countKempera--;
         }
     }
