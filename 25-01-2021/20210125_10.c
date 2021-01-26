@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void reverse(char text[], int count){
-    for (int i = count; i >= 0; i--)
+    for (int i = count - 2; i >= 0; i--)
     {
         printf("%c", text[i]);
     }
